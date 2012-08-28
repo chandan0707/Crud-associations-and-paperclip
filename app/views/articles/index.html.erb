@@ -1,4 +1,5 @@
-<h1>All Articles</h1>
+<h1 style="color:red";>All Articles</h1>
+
 
 <ul>
   <% @articles.each do |article| %>
@@ -8,3 +9,7 @@
   <% end %>
 </ul>
 <%= link_to "New Article", new_article_path, :class => "new_article" %>
+
+
+<marquee ><%= image_tag("c.jpg", :alt => "c", :size=>"250x100") %></marquee>
+

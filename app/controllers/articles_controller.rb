@@ -16,8 +16,13 @@ class ArticlesController < ApplicationController
 
 def create
 	   @article = Article.new(params[:article])
-    @article.save
-    redirect_to article_path(@article)
+	   if  @article.save
+     	redirect_to article_path(@article), :notice=>"Your post was saved"
+	else
+		render "new"
+	end
+    #@article.save
+    #redirect_to article_path(@article)
 
 
 end

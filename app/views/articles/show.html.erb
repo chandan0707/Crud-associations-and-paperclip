@@ -1,5 +1,10 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.body %></p>
+<h1 style="color:blue"><%= @article.title %></h1>
+<p><%= image_tag @article.image.url %></p>
+<%= image_tag @article.image.url(:medium) %>
+
+
+
+<p style="color:red"><%= @article.body %></p>
 <h3>Comments (<%= @article.comments.count %>)</h3>
 
 <%= render :partial => 'comment', :collection => @article.comments %>
