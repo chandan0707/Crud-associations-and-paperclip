@@ -46,4 +46,12 @@ def destroy
 		render 'index'
 	end
 end
+def about_us
+	end
+	def contact_us
+	end
+	def blogger_information
+	end
+def me_us
+end
 end

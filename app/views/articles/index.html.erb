@@ -1,5 +1,14 @@
-<h1 style="color:red";>All Articles</h1>
+<h1 style="color:red";>Home Page</h1>
+<body>
+<div id="topbar">
+<ul id="topnav">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
+  <%= link_to 'About us', :action=>'about_us'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+  <%= link_to 'Me', :action=>'me_us'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+
+  <%= link_to 'contact us', :action=>'contact_us'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+  <%= link_to 'Blogger Information', :action=>'blogger_information'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</body>
 
 <ul>
   <% @articles.each do |article| %>
@@ -9,7 +18,6 @@
   <% end %>
 </ul>
 <%= link_to "New Article", new_article_path, :class => "new_article" %>
-
 
 <marquee ><%= image_tag("c.jpg", :alt => "c", :size=>"250x100") %></marquee>
 
