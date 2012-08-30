@@ -1,17 +1,23 @@
-About the Developer
+<h3>About the Developer</h3>
 <%= image_tag("chandan.jpg", :alt => "chandan") %>
 
-   <p><font color="red">Email id :- chandan0707@gmail.com</font>
+   <p><font color="#666699">Email id :- chandan0707@gmail.com</font>
+<p><font color="#666699">Website :- https://www.facebook.com/chandan0707</font>
 
    </p><br/>
-   <p><font color="red">
+   <p><font color="#666699">
 I am Chandan Kumar Mallik. <br/>
 Currently working as a Trainee developer and chasing my dream to work in an MNC.
 <br/>
-<p><font color="Black">Qualifications:-  <font color="red">Bachelors In Engineering(Computer Science)<br/>
+<p><font color="Red">Qualifications:-  <font color="#666699">Bachelors In Engineering(Computer Science)<br/>
 Working as Trainee Developer@ Gowdanar Technologies<br/>
 Date of birth:-07/07/1988
-<p><font color="#DAA520">Mobile Number :- +91-8147523211</font></p>
+<p><font color="#666699">Mobile Number :- +91-8147523211</font></p>
 </font></p>
 </font></p><br/><br/>
-<%= link_to 'Home',{:action=>'index', :controller=>'articles'}%><br/>
+
+<%= link_to "Create new Article", new_article_path, :class => "new_article" %>
+<%= link_to "Home", articles_path, :class=>"articles"%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+
+<%= link_to 'contact us', :action=>'contact_us'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<%= link_to 'Blogger Information', :action=>'blogger_information'%>
